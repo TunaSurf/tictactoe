@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="gameover">
+        <h1 id="gameover-text"></h1>
+        <div id="end-game">End Game</div>
+    </div>
+
+    <div id="top"></div>
+
+    <div id="players">
+        <div id="results"></div>
+        <div class="card">
+            <div id="player-x" class="player-choice"></div>
+            <div class="piece x">X</div>
+            <div id="turn-x"></div>
+            <div id="ready-x" class="ready"></div>
+        </div>
+        <div class="card">
+            <div id="player-o" class="player-choice"></div>
+            <div class="piece o">O</div>
+            <div id="turn-o"></div>
+            <div id="ready-o" class="ready"></div>
+        </div>
+    </div>
+
+    <div id="play">Play</div>
+    
+    <div id="board-background">
+        <div class="square left top" id="0"></div>
+        <div class="square top" id="1"></div>
+        <div class="square right top" id="2"></div>
+        <div class="square left" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square right" id="5"></div>
+        <div class="square left bottom" id="6"></div>
+        <div class="square bottom" id="7"></div>
+        <div class="square right bottom" id="8"></div>
+    </div>
+
+
+
+    <script src="/tictactoe.js"></script>
+</body>
+</html>
